@@ -1,0 +1,10 @@
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.Form1.resources
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+J:\C-sharp\MiniGame\bin\Debug\MiniGame.exe.config
+J:\C-sharp\MiniGame\bin\Debug\MiniGame.exe
+J:\C-sharp\MiniGame\bin\Debug\MiniGame.pdb
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.exe
+J:\C-sharp\MiniGame\obj\Debug\MiniGame.pdb
