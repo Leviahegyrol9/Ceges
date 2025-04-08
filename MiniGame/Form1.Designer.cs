@@ -49,10 +49,10 @@
             this.névjegyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.directionsPanel = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.playersPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Player2Pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1Pb)).BeginInit();
@@ -201,21 +201,21 @@
             // kékToolStripMenuItem
             // 
             this.kékToolStripMenuItem.Name = "kékToolStripMenuItem";
-            this.kékToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.kékToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.kékToolStripMenuItem.Text = "Kék";
             this.kékToolStripMenuItem.Click += new System.EventHandler(this.ThemeClick);
             // 
             // sárgaToolStripMenuItem
             // 
             this.sárgaToolStripMenuItem.Name = "sárgaToolStripMenuItem";
-            this.sárgaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sárgaToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.sárgaToolStripMenuItem.Text = "Sárga";
             this.sárgaToolStripMenuItem.Click += new System.EventHandler(this.ThemeClick);
             // 
             // zöldToolStripMenuItem
             // 
             this.zöldToolStripMenuItem.Name = "zöldToolStripMenuItem";
-            this.zöldToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.zöldToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.zöldToolStripMenuItem.Text = "Zöld";
             this.zöldToolStripMenuItem.Click += new System.EventHandler(this.ThemeClick);
             // 
@@ -259,16 +259,27 @@
             this.directionsPanel.TabIndex = 9;
             this.directionsPanel.Visible = false;
             // 
-            // radioButton1
+            // radioButton4
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(107, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Fel";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Checked = true;
+            this.radioButton4.Location = new System.Drawing.Point(157, 69);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radioButton4.Size = new System.Drawing.Size(71, 20);
+            this.radioButton4.TabIndex = 3;
+            this.radioButton4.Text = "Jobbra";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(107, 127);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(43, 20);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.Text = "Le";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -278,32 +289,18 @@
             this.radioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.radioButton2.Size = new System.Drawing.Size(60, 20);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Balra";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(107, 127);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(43, 20);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Le";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(157, 69);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton4.Size = new System.Drawing.Size(71, 20);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Jobbra";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(107, 12);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(47, 20);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.Text = "Fel";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
