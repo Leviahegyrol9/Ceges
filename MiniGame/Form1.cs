@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,12 +14,11 @@ namespace MiniGame
 {
     public partial class Form1 : Form
     {
-        string player1 = string.Empty;
-        string player2 = string.Empty;
+        string player1;
+        string player2;
         public Form1()
         {
             InitializeComponent();
-            statusBar.Text = "Válassza ki a témat.";
         }
 
         private void GetPlayers(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace MiniGame
             {
                 playersPanel.Visible = true;
 
-                foreach (Control control in playersPanel.Controls)
+                foreach (Control control in playersPanel.Controls.OfType<TextBox>())
                 {
                     control.Enabled = true;
                 }
@@ -37,7 +37,7 @@ namespace MiniGame
             { 
                 playersPanel.Visible = false;
 
-                foreach (Control control in playersPanel.Controls)
+                foreach (Control control in playersPanel.Controls.OfType<TextBox>())
                 {
                     control.Enabled = false;
                 }
@@ -51,9 +51,9 @@ namespace MiniGame
 
             mapPb.Image = Image.FromFile($@"{Directory.GetCurrentDirectory()}\images\{theme.Text.ToLower()}.png");
 
-            themeSelectorTSM.Enabled = false;
+            themeSelectorMs.Enabled = false;
 
-            statusBar.Text = "Adja meg a neveket.";
+            statusLabel.Text = "Adja meg a neveket!";
 
             playersMenuStrip.Enabled = true;
         }
@@ -65,56 +65,65 @@ namespace MiniGame
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if(player1tB.Text == string.Empty || player2tB.Text == string.Empty)
+            if (playersPanel.Controls.OfType<TextBox>().Any(tB => tB.Text == string.Empty))
             {
-                statusBar.Text = "Töltse ki mind a kettő név mezőt.";
+                statusLabel.ForeColor = Color.Red;
+                statusLabel.Text = "Töltse ki a mezőket!";
             }
-            else if(player1tB.Text.ToLower() == player2tB.Text.ToLower())
+            else if (player1tB.Text.ToLower() == player2tB.Text.ToLower())
             {
-                statusBar.Text = "A két név nem lehet ugyan az.";
+                statusLabel.ForeColor = Color.Red;
+                statusLabel.Text = "A két név nem lehet ugyan az.";
+            }
+            else if (playersPanel.Controls.OfType<TextBox>().Any(tB => tB.Text.Length > 20))
+            {
+                statusLabel.ForeColor = Color.Red;
+                statusLabel.Text = "Túl hosszú név";
             }
             else
             {
-                player1 = player1tB.Text;
-                player2 = player2tB.Text;
+                foreach (PictureBox pB in this.Controls.OfType<PictureBox>())
+                {
+                    pB.Visible = true;
+                }
 
                 playersMenuStrip.Enabled = false;
-
-                statusBar.Text = $"A játék elkezdőtött. {player1} lép";
-
-                Player1Pb.Visible = true;
-                Player2Pb.Visible = true;
-
                 playersPanel.Visible = false;
+                directionsPanel.Visible = true;
 
-                movementscB.Visible = true;
+                player1 = player1tB.Text.Trim();
+                player2 = player2tB.Text.Trim();
+
+                statusLabel.ForeColor = Color.Black;
+                statusLabel.Text = $"A játék elkezdőtött. {player1} lép";
             }
 
         }
-        private void MovePb(object sender, EventArgs e)
+        private void MovePlayer(object sender, EventArgs e)
         {
-            PictureBox CurrentPicture = sender as PictureBox;
-            if(movementscB.SelectedItem != null)
-            {
-            switch(movementscB.SelectedItem.ToString())
+            PictureBox clickedPicture = sender as PictureBox;
+
+            switch (directionsPanel.Controls.OfType<RadioButton>().Where(rb => rb.Checked).Single().Text)
                 {
                     case "Fel":
-                        CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y - 123);
+                        clickedPicture.Location = new Point(clickedPicture.Location.X, clickedPicture.Location.Y - 125);
                         break;
+
                     case "Le":
-                        CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y + 125);
+                        clickedPicture.Location = new Point(clickedPicture.Location.X, clickedPicture.Location.Y + 125);
                         break;
-                    case "Bal":
-                        CurrentPicture.Location = new Point(CurrentPicture.Location.X - 150, CurrentPicture.Location.Y);
+
+                    case "Balra":
+                        clickedPicture.Location = new Point(clickedPicture.Location.X - 150, clickedPicture.Location.Y);
                         break;
-                    case "Jobb":
-                        CurrentPicture.Location = new Point(CurrentPicture.Location.X + 150, CurrentPicture.Location.Y);
+
+                    case "Jobbra":
+                        clickedPicture.Location = new Point(clickedPicture.Location.X + 150, clickedPicture.Location.Y);
                         break;
                 }
-            }
         }
 
-        static private bool IsPossibleMove()
+        private bool IsPossibleMove()
         {
             bool possible = true;
 
