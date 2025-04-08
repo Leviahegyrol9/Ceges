@@ -204,7 +204,7 @@
             // Player2Pb
             // 
             this.Player2Pb.Image = ((System.Drawing.Image)(resources.GetObject("Player2Pb.Image")));
-            this.Player2Pb.Location = new System.Drawing.Point(263, 146);
+            this.Player2Pb.Location = new System.Drawing.Point(263, 406);
             this.Player2Pb.Name = "Player2Pb";
             this.Player2Pb.Size = new System.Drawing.Size(150, 125);
             this.Player2Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

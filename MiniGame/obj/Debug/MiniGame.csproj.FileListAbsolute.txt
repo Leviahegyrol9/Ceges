@@ -18,3 +18,13 @@ J:\11\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
 J:\11\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
 J:\11\Ceges\MiniGame\obj\Debug\MiniGame.exe
 J:\11\Ceges\MiniGame\obj\Debug\MiniGame.pdb
+J:\Ceges\MiniGame\bin\Debug\MiniGame.exe.config
+J:\Ceges\MiniGame\bin\Debug\MiniGame.exe
+J:\Ceges\MiniGame\bin\Debug\MiniGame.pdb
+J:\Ceges\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+J:\Ceges\MiniGame\obj\Debug\MiniGame.Form1.resources
+J:\Ceges\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
+J:\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
+J:\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+J:\Ceges\MiniGame\obj\Debug\MiniGame.exe
+J:\Ceges\MiniGame\obj\Debug\MiniGame.pdb

@@ -82,6 +82,9 @@ namespace MiniGame
 
                 statusBar.Text = $"A játék elkezdőtött. {player1} lép";
 
+                Player1Pb.Visible = true;
+                Player2Pb.Visible = true;
+
                 playersPanel.Visible = false;
 
                 movementscB.Visible = true;
@@ -91,23 +94,33 @@ namespace MiniGame
         private void MovePb(object sender, EventArgs e)
         {
             PictureBox CurrentPicture = sender as PictureBox;
-
-            switch(movementscB.SelectedItem.ToString())
+            if(movementscB.SelectedItem != null)
             {
-                case "Fel":
-                    CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y + 150);
-                    break;
-                case "Le":
-                    CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y - 150);
-                    break;
-                case "Bal":
-                    CurrentPicture.Location = new Point(CurrentPicture.Location.X - 125, CurrentPicture.Location.Y);
-                    break;
-                case "Jobb":
-                    CurrentPicture.Location = new Point(CurrentPicture.Location.X + 125, CurrentPicture.Location.Y);
-                    break;
+            switch(movementscB.SelectedItem.ToString())
+                {
+                    case "Fel":
+                        CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y - 123);
+                        break;
+                    case "Le":
+                        CurrentPicture.Location = new Point(CurrentPicture.Location.X, CurrentPicture.Location.Y + 125);
+                        break;
+                    case "Bal":
+                        CurrentPicture.Location = new Point(CurrentPicture.Location.X - 150, CurrentPicture.Location.Y);
+                        break;
+                    case "Jobb":
+                        CurrentPicture.Location = new Point(CurrentPicture.Location.X + 150, CurrentPicture.Location.Y);
+                        break;
+                }
             }
-                
+        }
+
+        static private bool IsPossibleMove()
+        {
+            bool possible = true;
+
+
+
+            return possible;
         }
     }
 }
