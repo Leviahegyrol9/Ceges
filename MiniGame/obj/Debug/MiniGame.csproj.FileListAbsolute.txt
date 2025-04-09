@@ -28,13 +28,24 @@ J:\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
 J:\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
 J:\Ceges\MiniGame\obj\Debug\MiniGame.exe
 J:\Ceges\MiniGame\obj\Debug\MiniGame.pdb
-C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.exe.config
-C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.exe
-C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.pdb
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.Form1.resources
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.exe
-C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.pdb
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\bin\Debug\MiniGame.exe.config
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\bin\Debug\MiniGame.exe
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\bin\Debug\MiniGame.pdb
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.Form1.resources
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.exe
+C:\Users\abrah\OneDrive\Dokumentumok\C#\Ceges\MiniGame\obj\Debug\MiniGame.pdb
+J:\Ceges\MiniGame Csaba\bin\Debug\MiniGame.exe.config
+J:\Ceges\MiniGame Csaba\bin\Debug\MiniGame.exe
+J:\Ceges\MiniGame Csaba\bin\Debug\MiniGame.pdb
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.Form1.resources
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.Properties.Resources.resources
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.csproj.GenerateResource.cache
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.exe
+J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.pdb
