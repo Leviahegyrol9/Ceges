@@ -49,3 +49,13 @@ J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.csproj.GenerateResource.cache
 J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
 J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.exe
 J:\Ceges\MiniGame Csaba\obj\Debug\MiniGame.pdb
+C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.exe.config
+C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.exe
+C:\Saját\Projects\Ceges\MiniGame\bin\Debug\MiniGame.pdb
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.AssemblyReference.cache
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.Form1.resources
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.Properties.Resources.resources
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.GenerateResource.cache
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.csproj.CoreCompileInputs.cache
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.exe
+C:\Saját\Projects\Ceges\MiniGame\obj\Debug\MiniGame.pdb

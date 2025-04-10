@@ -81,15 +81,7 @@ namespace MiniGame
         }
         private void GetPlayers(object sender, EventArgs e)
         {
-            if (!playersPanel.Visible)
-            {
-                playersPanel.Visible = true;
-
-                foreach (TextBox textBox in playersPanel.Controls.OfType<TextBox>())
-                {
-                    textBox.Enabled = true;
-                }
-            }           
+            if (!playersPanel.Visible) playersPanel.Visible = true;          
         }    
         private void ShowMakers(object sender, EventArgs e)
         {
@@ -139,6 +131,7 @@ namespace MiniGame
             {
                 if (IsMove(statusLabel, directionsPanel.Controls.OfType<RadioButton>().Where(rB => rB.Checked).Single().Text, currentPicture, anotherLocation))
                 {
+                    statusLabel.ForeColor = Color.Black;
                     anotherLocation = currentPicture.Location;
                     if (currentPicture.Location == treasure)
                     {
@@ -149,7 +142,7 @@ namespace MiniGame
                         directionsPanel.Enabled = false;
                     }
                     else if (activePlayer == 1)
-                    {
+                    {                      
                         statusLabel.Text = $"{player2} lép";
                         Player1Pb.Enabled = false;
                         Player2Pb.Enabled = true;
@@ -171,6 +164,8 @@ namespace MiniGame
         }
         private bool IsMove(ToolStripStatusLabel statusLabel, string direction, PictureBox currentPicture, Point anotherLocation)
         {
+            statusLabel.ForeColor = Color.Red;
+
             switch (direction)
             {
                 case "Fel":
@@ -180,7 +175,7 @@ namespace MiniGame
                         return false;
                     }
                     else if(currentPicture.Location.Y - 125 == anotherLocation.Y && currentPicture.Location.X == anotherLocation.X)
-                    {
+                    {                      
                         statusLabel.Text = "Az a mező már foglalt!";
                         return false;
                     }
