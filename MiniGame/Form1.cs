@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -247,6 +248,11 @@ namespace MiniGame
             {
                 Application.Restart();
             }
+        }
+
+        private void gitHubClick(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/Leviahegyrol9/Ceges");
         }
     }
 }
