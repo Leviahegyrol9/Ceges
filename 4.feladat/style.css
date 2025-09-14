@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header{
+    background-color: purple;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    margin-bottom: 10px;
+}
+header{
+    display: flex;
+    gap: 15px;
+}
+header div{
+    width: 80px;
+    height: 30px;
+    background-color: cyan;
+}
+main{
+    display: flex;
+    height: 100%;
+}
+main > div:first-child{
+    background-color: green;
+    margin-left: 70px;
+    margin-right: 10px;
+    flex: 2;
+    height: 650px;
+}
+main > div:last-child{
+    background-color: yellow;
+    flex: 5;
+    margin-right: 70px;
+    height: 650px;
+}
+footer{
+    background-color: gray;
+    height: 60px;
+    margin: 10px 70px 10px 70px;
+}
